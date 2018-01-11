@@ -32,7 +32,14 @@
                             <outlet property="delegate" destination="qgq-zO-koj" id="1ha-G8-dRw"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" title="Todoey" id="Vda-Ek-yen"/>
+                    <navigationItem key="navigationItem" title="Todoey" id="Vda-Ek-yen">
+                        <barButtonItem key="rightBarButtonItem" systemItem="add" id="wY7-I5-trt">
+                            <color key="tintColor" red="0.99946615009999995" green="1" blue="0.97152934079999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <connections>
+                                <action selector="addButtonPressed:" destination="qgq-zO-koj" id="B1j-L5-z83"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                     <connections>
                         <outlet property="tableView" destination="czd-UU-6MK" id="ZRG-4y-n5x"/>
                     </connections>
