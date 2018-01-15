@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		CB41B14A2008B98200E4DB57 /* Item.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB41B1492008B98100E4DB57 /* Item.swift */; };
 		CB7B76CC20065B8800AFE252 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB7B76CB20065B8800AFE252 /* AppDelegate.swift */; };
 		CB7B76CE20065B8800AFE252 /* TodoListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB7B76CD20065B8800AFE252 /* TodoListViewController.swift */; };
 		CB7B76D120065B8800AFE252 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CB7B76CF20065B8800AFE252 /* Main.storyboard */; };
@@ -15,6 +16,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		CB41B1492008B98100E4DB57 /* Item.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Item.swift; sourceTree = "<group>"; };
 		CB7B76C820065B8800AFE252 /* Todoey.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Todoey.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CB7B76CB20065B8800AFE252 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		CB7B76CD20065B8800AFE252 /* TodoListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodoListViewController.swift; sourceTree = "<group>"; };
@@ -35,6 +37,39 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		CB41B14B2008BCA100E4DB57 /* Data Model */ = {
+			isa = PBXGroup;
+			children = (
+				CB41B1492008B98100E4DB57 /* Item.swift */,
+			);
+			path = "Data Model";
+			sourceTree = "<group>";
+		};
+		CB41B14C2008BCDB00E4DB57 /* Contollers */ = {
+			isa = PBXGroup;
+			children = (
+				CB7B76CD20065B8800AFE252 /* TodoListViewController.swift */,
+			);
+			path = Contollers;
+			sourceTree = "<group>";
+		};
+		CB41B14D2008BD2A00E4DB57 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				CB7B76CF20065B8800AFE252 /* Main.storyboard */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		CB41B14E2008BD5200E4DB57 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				CB7B76D220065B8800AFE252 /* Assets.xcassets */,
+				CB7B76D420065B8800AFE252 /* LaunchScreen.storyboard */,
+			);
+			path = "Supporting Files";
+			sourceTree = "<group>";
+		};
 		CB7B76BF20065B8800AFE252 = {
 			isa = PBXGroup;
 			children = (
@@ -55,10 +90,10 @@
 			isa = PBXGroup;
 			children = (
 				CB7B76CB20065B8800AFE252 /* AppDelegate.swift */,
-				CB7B76CD20065B8800AFE252 /* TodoListViewController.swift */,
-				CB7B76CF20065B8800AFE252 /* Main.storyboard */,
-				CB7B76D220065B8800AFE252 /* Assets.xcassets */,
-				CB7B76D420065B8800AFE252 /* LaunchScreen.storyboard */,
+				CB41B14C2008BCDB00E4DB57 /* Contollers */,
+				CB41B14B2008BCA100E4DB57 /* Data Model */,
+				CB41B14D2008BD2A00E4DB57 /* Views */,
+				CB41B14E2008BD5200E4DB57 /* Supporting Files */,
 				CB7B76D720065B8800AFE252 /* Info.plist */,
 			);
 			path = Todoey;
@@ -137,6 +172,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				CB7B76CE20065B8800AFE252 /* TodoListViewController.swift in Sources */,
+				CB41B14A2008B98200E4DB57 /* Item.swift in Sources */,
 				CB7B76CC20065B8800AFE252 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -275,6 +311,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = WY4KC73HRC;
 				INFOPLIST_FILE = Todoey/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.YPS.Todoey;
@@ -289,6 +326,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = WY4KC73HRC;
 				INFOPLIST_FILE = Todoey/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.YPS.Todoey;
