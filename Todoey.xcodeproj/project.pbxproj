@@ -11,6 +11,7 @@
 		9373C896200F86B80066CF61 /* CategoryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9373C895200F86B80066CF61 /* CategoryViewController.swift */; };
 		9373C89A2010D9010066CF61 /* Item.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9373C8992010D9010066CF61 /* Item.swift */; };
 		9373C89C2010D91A0066CF61 /* Category.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9373C89B2010D91A0066CF61 /* Category.swift */; };
+		939DD9BF20175D5000B3F591 /* SwipeTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 939DD9BE20175D5000B3F591 /* SwipeTableViewController.swift */; };
 		CB7B76CC20065B8800AFE252 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB7B76CB20065B8800AFE252 /* AppDelegate.swift */; };
 		CB7B76CE20065B8800AFE252 /* TodoListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB7B76CD20065B8800AFE252 /* TodoListViewController.swift */; };
 		CB7B76D120065B8800AFE252 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CB7B76CF20065B8800AFE252 /* Main.storyboard */; };
@@ -23,6 +24,7 @@
 		9373C895200F86B80066CF61 /* CategoryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = CategoryViewController.swift; path = Todoey/Contollers/CategoryViewController.swift; sourceTree = SOURCE_ROOT; };
 		9373C8992010D9010066CF61 /* Item.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Item.swift; sourceTree = "<group>"; };
 		9373C89B2010D91A0066CF61 /* Category.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Category.swift; sourceTree = "<group>"; };
+		939DD9BE20175D5000B3F591 /* SwipeTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwipeTableViewController.swift; sourceTree = "<group>"; };
 		B00F83FCEA8994E657B075AA /* Pods-Todoey.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Todoey.release.xcconfig"; path = "Pods/Target Support Files/Pods-Todoey/Pods-Todoey.release.xcconfig"; sourceTree = "<group>"; };
 		CB7B76C820065B8800AFE252 /* Todoey.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Todoey.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CB7B76CB20065B8800AFE252 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -69,6 +71,7 @@
 			children = (
 				9373C895200F86B80066CF61 /* CategoryViewController.swift */,
 				CB7B76CD20065B8800AFE252 /* TodoListViewController.swift */,
+				939DD9BE20175D5000B3F591 /* SwipeTableViewController.swift */,
 			);
 			path = Contollers;
 			sourceTree = "<group>";
@@ -207,13 +210,17 @@
 			);
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-Todoey/Pods-Todoey-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/ChameleonFramework/ChameleonFramework.framework",
 				"${BUILT_PRODUCTS_DIR}/Realm/Realm.framework",
 				"${BUILT_PRODUCTS_DIR}/RealmSwift/RealmSwift.framework",
+				"${BUILT_PRODUCTS_DIR}/SwipeCellKit/SwipeCellKit.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ChameleonFramework.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Realm.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RealmSwift.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwipeCellKit.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -264,6 +271,7 @@
 				9373C896200F86B80066CF61 /* CategoryViewController.swift in Sources */,
 				CB7B76CE20065B8800AFE252 /* TodoListViewController.swift in Sources */,
 				CB7B76CC20065B8800AFE252 /* AppDelegate.swift in Sources */,
+				939DD9BF20175D5000B3F591 /* SwipeTableViewController.swift in Sources */,
 				9373C89C2010D91A0066CF61 /* Category.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
