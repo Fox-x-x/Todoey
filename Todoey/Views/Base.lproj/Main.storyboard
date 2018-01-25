@@ -42,13 +42,13 @@
                     </tableView>
                     <navigationItem key="navigationItem" title="Items" id="Vda-Ek-yen">
                         <barButtonItem key="rightBarButtonItem" systemItem="add" id="wY7-I5-trt">
-                            <color key="tintColor" red="0.99946615009999995" green="1" blue="0.97152934079999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             <connections>
                                 <action selector="addButtonPressed:" destination="qgq-zO-koj" id="B1j-L5-z83"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>
                     <connections>
+                        <outlet property="searchBar" destination="MQi-2N-M20" id="BG4-p4-HKM"/>
                         <outlet property="tableView" destination="czd-UU-6MK" id="ZRG-4y-n5x"/>
                     </connections>
                 </tableViewController>
@@ -61,10 +61,10 @@
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="fa1-sj-hFa" sceneMemberID="viewController">
                     <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="Tbc-Fo-Jun">
-                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" largeTitles="YES" id="Tbc-Fo-Jun">
+                        <rect key="frame" x="0.0" y="20" width="375" height="96"/>
                         <autoresizingMask key="autoresizingMask"/>
-                        <color key="barTintColor" red="0.46202266219999999" green="0.83828371759999998" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="barTintColor" red="0.5365931988" green="0.85719072819999997" blue="0.99530476329999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <textAttributes key="titleTextAttributes">
                             <color key="textColor" red="0.99946615006695738" green="1" blue="0.97152934077305786" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         </textAttributes>
@@ -94,6 +94,7 @@
                                     <rect key="frame" x="0.0" y="0.0" width="375" height="43.5"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                 </tableViewCellContentView>
+                                <color key="tintColor" red="0.53659319877624512" green="0.85719072818756104" blue="0.99530476331710815" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             </tableViewCell>
                         </prototypes>
                         <connections>
